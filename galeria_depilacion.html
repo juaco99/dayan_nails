@@ -5,30 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galería de Depilación - Dayan Nails</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
- <nav class="navbar">
-  <div class="menu-toggle" id="mobile-menu">
-    <i class="fas fa-bars"></i>
-  </div>
-  <ul class="nav-list">
-    <li><a href="index.html#inicio">Inicio</a></li>
-    <li><a href="index.html#servicios">Servicios</a></li>
-    <li><a href="uñas.html">Manicure</a></li>
-    <li><a href="galeria_depilacion.html">Pedicure</a></li>
-    <li><a href="index.html#contacto">Contacto</a></li>
-  </ul>
-</nav>
-    <p><a href="index.html">← Volver al inicio</a></p>
-  </div>
-  <script>
-  const mobileMenu = document.getElementById('mobile-menu');
-  const navList = document.querySelector('.nav-list');
 
-  mobileMenu.addEventListener('click', () => {
-    navList.classList.toggle('active');
-  });
-</script>
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1>Dayan Nails</h1>
+      <p>Uñas & Depilación profesional en un solo lugar</p>
+      <a href="#contacto" class="btn">Reserva tu hora</a>
+    </div>
+  </header>
+
+  <!-- Menú de navegación responsive -->
+  <nav class="navbar">
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-list">
+      <li><a href="index.html#inicio">Inicio</a></li>
+      <li><a href="index.html#servicios">Servicios</a></li>
+      <li><a href="uñas.html">Manicure</a></li>
+      <li><a href="galeria_depilacion.html">Pedicure</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Galería -->
+  <main class="section">
+    <div class="container">
+      <h2>Galería de Depilación</h2>
+      <p>Conoce algunos de nuestros servicios de depilación con cera</p>
+      <div class="galeria">
+        <img src="img/depilacion1.jpg" alt="Depilación 1" />
+        <img src="img/depilacion2.jpg" alt="Depilación 2" />
+        <img src="img/depilacion3.jpg" alt="Depilación 3" />
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Dayan Nails. Todos los derechos reservados.</p>
+      <p class="redes">
+        <a href="https://wa.me/56930854818" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a> |
+        <a href="https://instagram.com/dayan__nails" target="_blank">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/56930854818" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Script para menú hamburguesa -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
