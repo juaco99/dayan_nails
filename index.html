@@ -13,22 +13,23 @@
     <div class="container">
       <h1>Dayan Nails</h1>
       <p>Uñas & Depilación profesional en un solo lugar</p>
+      <a href="#contacto" class="btn">Reserva tu hora</a>
     </div>
   </header>
 
- <nav class="navbar">
-  <div class="menu-toggle" id="mobile-menu">
-    <i class="fas fa-bars"></i>
-  </div>
-  <ul class="nav-list">
-    <li><a href="index.html#inicio">Inicio</a></li>
-    <li><a href="index.html#servicios">Servicios</a></li>
-    <li><a href="uñas.html">Manicure</a></li>
-    <li><a href="galeria_depilacion.html">Pedicure</a></li>
-    <li><a href="index.html#contacto">Contacto</a></li>
-  </ul>
-</nav>
-
+  <!-- Menú de navegación responsive -->
+  <nav class="navbar">
+    <div class="menu-toggle" id="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="uñas.html">Manicure</a></li>
+      <li><a href="galeria_depilacion.html">Pedicure</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
   <main>
     <section id="inicio" class="section">
@@ -41,9 +42,8 @@
     <section id="servicios" class="section servicios-modernos">
       <div class="container">
 
-        <!-- Imagen decorativa dentro de la sección servicios -->
         <div class="decorativo">
-        <img src="img/una-fondo.png.png" alt="Decoración entre secciones">  
+          <img src="img/uña fondo.png" alt="Decoración entre secciones">
         </div>
 
         <h2>Servicios</h2>
@@ -72,8 +72,8 @@
         <h2>Contacto</h2>
         <p>📞 <strong>+56 9 3085 4818</strong></p>
         <a href="https://wa.me/56930854818" class="btn btn-contacto" target="_blank">
-         Reserva tu hora por WhatsApp
-</a>
+          Reserva tu hora por WhatsApp
+        </a>
       </div>
     </section>
   </main>
@@ -91,13 +91,20 @@
       </p>
     </div>
   </footer>
- <script>
-  const mobileMenu = document.getElementById('mobile-menu');
-  const navList = document.querySelector('.nav-list');
 
-  mobileMenu.addEventListener('click', () => {
-    navList.classList.toggle('active');
-  });
-</script>
+  <!-- Botón flotante WhatsApp -->
+  <a href="https://wa.me/56930854818" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Script para menú hamburguesa -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
