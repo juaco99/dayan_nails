@@ -228,3 +228,14 @@ footer .redes a i {
   margin-top: 2em; /* Puedes aumentar este valor si quieres más separación */
   display: inline-block;
 }
+
+.gallery.images img {
+  width: 250px;     /* puedes ajustar este valor */
+  height: 250px;    /* mismo valor para que sean cuadradas */
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
