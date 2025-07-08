@@ -7,15 +7,28 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="container">
-    <h2>Galería de Depilación</h2>
-    <div class="gallery images">
-      <img src="img/cera_cejas.jpg.jpg" alt="Depilación de cejas con cera">
-      <img src="img/cera_piernas.jpg.jpeg" alt="Depilación de piernas con cera">
-      <img src="img/cera_axilas.jpg.webp" alt="Depilación de axilas con cera">
-      <img src="img/cera_spatula.jpg.jpeg" alt="Cera y espátula para depilación"
-    </div>
+ <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    <i class="fas fa-bars"></i>
+  </div>
+  <ul class="nav-list">
+    <li><a href="index.html#inicio">Inicio</a></li>
+    <li><a href="index.html#servicios">Servicios</a></li>
+    <li><a href="uñas.html">Manicure</a></li>
+    <li><a href="galeria_depilacion.html">Pedicure</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+</nav>
     <p><a href="index.html">← Volver al inicio</a></p>
   </div>
+  <script>
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navList = document.querySelector('.nav-list');
+
+  mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>
