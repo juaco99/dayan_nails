@@ -20,15 +20,18 @@
   </header>
 
   <!-- Menú de navegación -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="index.html#inicio">Inicio</a></li>
-      <li><a href="index.html#servicios">Servicios</a></li>
-      <li><a href="uñas.html">Manicure</a></li>
-      <li><a href="galeria_depilacion.html">Pedicure</a></li>
-      <li><a href="index.html#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+   <nav class="navbar">
+  <div class="menu-toggle" id="mobile-menu">
+    <i class="fas fa-bars"></i>
+  </div>
+  <ul class="nav-list">
+    <li><a href="index.html#inicio">Inicio</a></li>
+    <li><a href="index.html#servicios">Servicios</a></li>
+    <li><a href="uñas.html">Manicure</a></li>
+    <li><a href="galeria_depilacion.html">Pedicure</a></li>
+    <li><a href="index.html#contacto">Contacto</a></li>
+  </ul>
+</nav>
 
   <!-- Galería -->
   <main class="section">
@@ -77,6 +80,14 @@
   <a href="https://wa.me/56930854818" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
+<script>
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navList = document.querySelector('.nav-list');
+
+  mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
