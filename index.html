@@ -98,21 +98,15 @@
   </a>
 
   <!-- Script para menú hamburguesa -->
-  <script>
-  const toggleBtn = document.querySelector('.menu-toggle');
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
   const navList = document.querySelector('.nav-list');
-  const navLinks = document.querySelectorAll('.nav-list a');
 
-  toggleBtn.addEventListener('click', () => {
+  menuToggle.addEventListener('click', () => {
     navList.classList.toggle('active');
   });
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navList.classList.remove('active');
-    });
-  });
 </script>
+
 
 </body>
 </html>
