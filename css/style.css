@@ -56,21 +56,19 @@ body {
   top: 12px;
 }
 
-.navbar ul,
 .nav-list {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2em;
+  gap: 20px;
+  flex-wrap: wrap;
   margin: 0;
   padding: 1em 0;
-  flex-wrap: wrap;
 }
 
-.navbar a,
 .nav-list li a {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   font-weight: 600;
 }
 
@@ -237,7 +235,7 @@ footer .redes a i {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* --- RESPONSIVE MENÚ --- */
+/* Responsive menu */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -249,11 +247,11 @@ footer .redes a i {
     align-items: center;
     background-color: #e06c9f;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 0;
     width: 100%;
     padding: 15px 0;
-    z-index: 10;
+    z-index: 999;
   }
 
   .nav-list.active {
