@@ -69,14 +69,22 @@
   </a>
 
   <!-- Script para menú hamburguesa -->
-  <script>
-    const mobileMenu = document.getElementById('mobile-menu');
-    const navList = document.querySelector('.nav-list');
+ <script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const navList = document.querySelector('.nav-list');
+  const navLinks = document.querySelectorAll('.nav-list a');
 
-    mobileMenu.addEventListener('click', () => {
-      navList.classList.toggle('active');
+  toggleBtn.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navList.classList.remove('active');
     });
-  </script>
+  });
+</script>
+
 
 </body>
 </html>
